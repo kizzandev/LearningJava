@@ -8,3 +8,4 @@ Find them [here](src/main/java/kv/miniPrograms)!
 
 - Prime Numbers
 - Palindromes
+- Password Generator

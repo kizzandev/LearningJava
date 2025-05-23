@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import static kv.miniPrograms.PrimeNumbers.isPrime;
 import static kv.miniPrograms.Palindromes.isPalindrome;
+import static kv.miniPrograms.PasswordGenerator.generatePassword;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,10 +14,11 @@ public class Main {
         Main main = new Main();
 
         do {
-            System.out.println("Select the mini program to run.");
+            System.out.println("Select the mini program to run:");
             System.out.println("0. Exit");
-            System.out.println("1. isPrime");
-            System.out.println("2. isPalindrome");
+            System.out.println("1. Check if number is prime");
+            System.out.println("2. Check if a phrase is a palindrome");
+            System.out.println("3. Generate a password");
 
             i = read.nextInt();
             switch (i) {
@@ -25,12 +27,20 @@ public class Main {
                     break;
                 case 2:
                     main.runPalindromes();
+                case 3:
+                    main.runPasswordGenerator();
                 default:
                     break;
             }
 
+            System.out.println();
         } while (i != 0);
 
+    }
+
+    private void runPasswordGenerator() {
+        System.out.println("Generated password:");
+        System.out.println(generatePassword());
     }
 
     private void runPalindromes() {
