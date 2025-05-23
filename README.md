@@ -1,0 +1,9 @@
+# Learning Java
+
+A bunch of mini programs made in Java in order to say I am expert with a million years of experience.
+
+Find them [here](src/main/java/kv/miniPrograms)!
+
+## So far...
+
+- Primer Numbers
