@@ -6,4 +6,5 @@ Find them [here](src/main/java/kv/miniPrograms)!
 
 ## So far...
 
-- Primer Numbers
+- Prime Numbers
+- Palindromes
