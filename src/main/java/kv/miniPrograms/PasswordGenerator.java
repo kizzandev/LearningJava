@@ -5,6 +5,10 @@ import java.security.SecureRandom; // I wrote .Ran and this guy came up
 
 public class PasswordGenerator {
 
+    /**
+     * Generate a random set of characters to be used as a password
+     * @return String - 16 characters with letters and numbers
+     */
     static String generatePassword() {
         StringBuilder allChars = new StringBuilder();
         for (int i = 0; i < 26; i++) {

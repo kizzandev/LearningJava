@@ -2,6 +2,11 @@ package kv.miniPrograms;
 
 public class Palindromes {
 
+    /**
+     * @param word phrase to be checked if palindrome
+     * @param shouldSkipSymbols true if symbols are ignored
+     * @return boolean
+     */
     public static boolean isPalindrome(String word, boolean shouldSkipSymbols) {
         if (word == null || word.length() <= 1) {
             return false;
@@ -36,6 +41,10 @@ public class Palindromes {
         return true;
     }
 
+    /**
+     * @param word phrase to be checked if palindrome
+     * @return boolean
+     */
     public static boolean isPalindrome(String word) {
         if (word == null || word.length() <= 1) {
             return false;

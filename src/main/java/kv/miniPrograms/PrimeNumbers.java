@@ -2,6 +2,11 @@ package kv.miniPrograms;
 
 public class PrimeNumbers {
 
+    /**
+     * Check if a number is a prime
+     * @param number number to be evaluated
+     * @return boolean
+     */
     static boolean isPrime(int number) {
         if (number <= 1) {
             return false;
