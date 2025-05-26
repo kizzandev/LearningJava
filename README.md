@@ -10,3 +10,5 @@ Find them [here](src/main/java/kv/miniPrograms)!
 - Palindromes
 - Password Generator
 - Factorial
+- Stack
+- Anagram
