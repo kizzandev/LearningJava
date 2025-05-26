@@ -57,7 +57,6 @@ public class Main {
     }
 
     private void runAnagram() {
-//        read.nextLine();
         System.out.println("Anagram");
         System.out.print("First string: ");
         String first = read.nextLine();
@@ -74,7 +73,7 @@ public class Main {
     private void runStack() {
         Stack<Integer> iStack = new Stack<>();
         int opt;
-        System.out.println("Stack: " + iStack.toString());
+        System.out.println("Stack: " + iStack);
         do {
             System.out.println("""
                     Choose:
@@ -88,13 +87,13 @@ public class Main {
                 System.out.print("To add: ");
                 opt = Integer.parseInt(read.nextLine());
                 iStack.push(opt);
-                System.out.println("Stack: " + iStack.toString() + '\n');
+                System.out.println("Stack: " + iStack + '\n');
             } else if (opt == 2) {
                 iStack.pop();
-                System.out.println("Stack: " + iStack.toString() + '\n');
+                System.out.println("Stack: " + iStack + '\n');
             } else if (opt == 3) {
                 iStack.clear();
-                System.out.println("Stack: " + iStack.toString() + '\n');
+                System.out.println("Stack: " + iStack + '\n');
             } else if (opt == 4) {
                 System.out.println("Size: " + iStack.size() + '\n');
             }
@@ -106,14 +105,13 @@ public class Main {
                 Choose:
                 1. normal int
                 2. big int""");
-        int n = Integer.parseInt(read.nextLine());;
+        int n = Integer.parseInt(read.nextLine());
         System.out.print("Calculate the factorial of: ");
 
         if (n == 1) {
-            n = Integer.parseInt(read.nextLine());;
+            n = Integer.parseInt(read.nextLine());
             System.out.println("Result: " + factorial(n));
         } else if (n == 2) {
-//            BigInteger bn = read.nextBigInteger();
             BigInteger bn = BigInteger.valueOf(Integer.parseInt(read.nextLine()));
             System.out.println("Result: " + factorial(bn));
         }
@@ -148,7 +146,7 @@ public class Main {
 
         do {
             System.out.print("Select a number: ");
-            n = Integer.parseInt(read.nextLine());;
+            n = Integer.parseInt(read.nextLine());
             if (n == 0) {
                 break;
             }
