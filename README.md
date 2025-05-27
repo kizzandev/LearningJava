@@ -12,3 +12,7 @@ Find them [here](src/main/java/kv/miniPrograms)!
 - Factorial
 - Stack
 - Anagram
+
+## And some
+
+- [Bank Manager](src/main/java/bankManager)
