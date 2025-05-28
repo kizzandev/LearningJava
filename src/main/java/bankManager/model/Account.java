@@ -7,9 +7,9 @@ public class Account {
     private final String accountNumber;
     private BigInteger balance;
     private final Customer accountHolder;
-    private String accountType; // Savings
+    private AccountType accountType; // Savings
 
-    public Account(String accountNumber, BigInteger initialBalance, Customer accountHolder, String accountType) {
+    public Account(String accountNumber, BigInteger initialBalance, Customer accountHolder, AccountType accountType) {
         this.accountNumber = accountNumber;
         this.balance = initialBalance;
         this.accountHolder = accountHolder;
@@ -30,11 +30,11 @@ public class Account {
         return accountHolder;
     }
 
-    public String getAccountType() {
+    public AccountType getAccountType() {
         return accountType;
     }
 
-    public void setAccountType(String type) {
+    public void setAccountType(AccountType type) {
         this.accountType = type;
     }
 
@@ -86,6 +86,11 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account {\n" + "  accountNumber: " + this.accountNumber + ",\n" + "  balance: " + this.balance.doubleValue() + ",\n" + "  accountHolder: " + this.accountHolder.getCustomerId() + ",\n" + "  accountType: " + this.accountType + ",\n" + "}";
+        return "Account {\n" +
+               "  accountNumber: " + this.accountNumber + ",\n" +
+               "  balance: " + this.balance.doubleValue() + ",\n" +
+               "  accountHolder: " + this.accountHolder.getCustomerId() + ",\n" +
+               "  accountType: " + this.accountType + ",\n" +
+               "}";
     }
 }

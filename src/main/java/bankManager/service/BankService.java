@@ -1,6 +1,7 @@
 package bankManager.service;
 
 import bankManager.model.Account;
+import bankManager.model.AccountType;
 import bankManager.model.Customer;
 
 import java.math.BigInteger;
@@ -26,7 +27,7 @@ public class BankService {
         return customer;
     }
 
-    public Account createAccount(String accountNumber, String customerId, String type) {
+    public Account createAccount(String accountNumber, String customerId, AccountType type) {
         if (accounts.containsKey(accountNumber)) {
             return null;
         }

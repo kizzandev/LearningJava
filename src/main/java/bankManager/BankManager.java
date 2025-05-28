@@ -1,6 +1,7 @@
 package bankManager;
 
 import bankManager.model.Account;
+import bankManager.model.AccountType;
 import bankManager.model.Customer;
 import bankManager.service.BankService;
 
@@ -51,8 +52,18 @@ public class BankManager {
                     System.out.print("Customer Id: ");
                     String customerId = read.nextLine();
                     System.out.print("Type: ");
-                    String type = read.nextLine();
-                    bankService.createAccount(accountNumber, customerId, type);
+                    String strType = read.nextLine();
+
+                    AccountType accountType;
+                    if (strType.equalsIgnoreCase("checking")) {
+                        accountType = AccountType.CHECKING;
+                    } else if (strType.equalsIgnoreCase("savings")) {
+                        accountType = AccountType.SAVINGS;
+                    } else {
+                        accountType = AccountType.UNKNOWN;
+                    }
+
+                    bankService.createAccount(accountNumber, customerId, accountType);
                     break;
                 }
                 case 3: {
